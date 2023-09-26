@@ -8,39 +8,42 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body class="border p-4 mt-5 mb-5 border-5 border-black container">
     <h1 class="text-center">Distribuidora Jo-Car      -     Porcentaje de Ganancia 35% </h1>
     <h1 class="text-center">Lista de Precios</h1>
     <form method="POST" action="filtrar.php" id="filtrar-form">
-        <div class="form-group"> <!-- Utiliza la clase "form-group" para cada grupo de etiqueta e input -->
+        
+        <div class="form-group mx-auto text-center"> <!-- Utiliza la clase "form-group" para cada grupo de etiqueta e input -->
             <label for="cod">Codigo:</label>
-            <input type="text" name="cod" class="form-control"> <!-- Utiliza la clase "form-control" para el input -->
+            <input type="text" name="cod" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black"> <!-- Utiliza la clase "form-control" para el input -->
         </div>
     
-        <div class="form-group">
+        <div class="form-group mx-auto text-center">
             <label for="rubro">Rubro:</label>
-            <input type="text" name="rubro" class="form-control">
+            <input type="text" name="rubro" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
         </div>
     
-        <div class="form-group">
+        <div class="form-group mx-auto text-center">
             <label for="eq1">EQ1:</label>
-            <input type="text" name="eq1" class="form-control">
+            <input type="text" name="eq1" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
         </div>
     
-        <div class="form-group">
+        <div class="form-group mx-auto text-center">
             <label for="eq2">EQ2:</label>
-            <input type="text" name="eq2" class="form-control">
+            <input type="text" name="eq2" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
         </div>
     
-        <div class="form-group">
+        <div class="form-group mx-auto text-center">
             <label for="marca">Marca:</label>
-            <input type="text" name="marca" class="form-control">
+            <input type="text" name="marca" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
         </div>
     
-        <div class="form-group">
+        <div class="form-group mx-auto text-center">
             <label for="modelo">Modelo:</label>
-            <input type="text" name="modelo" class="form-control">
+            <input type="text" name="modelo" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
         </div>
     
         
@@ -57,6 +60,10 @@
     <div class="text-center mt-3"> 
         <input type="submit" value="Borrar busqueda" class="btn btn-dark" id="borrar-busqueda">
     </div>
+
+    <div class="text-center mt-3"> 
+        <input type="submit" value="Modo Oscuro" class="btn btn-dark" id="oscuro">
+    </div>
     
     
     <div class="container mt-4">
@@ -64,6 +71,15 @@
     </div>
 
     <script src="ajax.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Evento clic para cambiar al modo oscuro
+            $('#oscuro').click(function() {
+                // Toggle de la clase dark-mode en el body
+                $('body').toggleClass('dark-mode');
+            });
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
