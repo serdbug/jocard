@@ -2,30 +2,73 @@
 <html>
 <head>
     <title>Filtrar Tabla de Stock</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
-    <h1>Filtrar Tabla de Stock</h1>
+<body class="container border p-4 mt-5 border-5 border-black">
+    <h1 class="text-center">Distribuidora Jo-Car      -     Porcentaje de Ganancia 35% </h1>
     <form method="POST" action="filtrar.php">
-        <label for="cod">Codigo:</label>
-        <input type="text" name="cod">
-        <br>
-        <label for="rubro">Rubro:</label>
-        <input type="text" name="rubro">
-        <br>
-        <label for="eq1">EQ1:</label>
-        <input type="text" name="eq1">
-        <br>
-        <label for="eq2">EQ2:</label>
-        <input type="text" name="eq2">
-        <br>
-        <label for="marca">Marca:</label>
-        <input type="text" name="marca">
-        <br>
-        <label for="modelo">Modelo:</label>
-        <input type="text" name="modelo">
-        <br>
-        <!-- Agrega más campos de filtro según tus necesidades -->
-        <input type="submit" value="Filtrar">
+        <div class="form-group"> <!-- Utiliza la clase "form-group" para cada grupo de etiqueta e input -->
+            <label for="cod">Codigo:</label>
+            <input type="text" name="cod" class="form-control"> <!-- Utiliza la clase "form-control" para el input -->
+        </div>
+    
+        <div class="form-group">
+            <label for="rubro">Rubro:</label>
+            <input type="text" name="rubro" class="form-control">
+        </div>
+    
+        <div class="form-group">
+            <label for="eq1">EQ1:</label>
+            <input type="text" name="eq1" class="form-control">
+        </div>
+    
+        <div class="form-group">
+            <label for="eq2">EQ2:</label>
+            <input type="text" name="eq2" class="form-control">
+        </div>
+    
+        <div class="form-group">
+            <label for="marca">Marca:</label>
+            <input type="text" name="marca" class="form-control">
+        </div>
+    
+        <div class="form-group">
+            <label for="modelo">Modelo:</label>
+            <input type="text" name="modelo" class="form-control">
+        </div>
+    
+        
+        <div class="text-center mt-3"> 
+            <input type="submit" value="Filtrar" class="btn btn-dark">
+        </div>
+       
     </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </body>
 </html>
+
+
+
+
+ <!-- <label for="cod">Codigo:</label>
+        <input type="text" name="cod">
+        
+        <label for="rubro">Rubro:</label>
+        <input type="text" name="rubro">
+        
+        <label for="eq1">EQ1:</label>
+        <input type="text" name="eq1">
+        
+        <label for="eq2">EQ2:</label>
+        <input type="text" name="eq2">
+        
+        <label for="marca">Marca:</label>
+        <input type="text" name="marca">
+        
+        <label for="modelo">Modelo:</label>
+        <input type="text" name="modelo">
+        
+        
+        <input type="submit" value="Filtrar"> -->
