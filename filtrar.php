@@ -56,8 +56,25 @@ if (!empty($modelo)) {
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "<table border='1'>";
-    echo "<tr><th>Cod</th><th>Rubro</th><th>Eq1</th><th>Eq2</th><th>Marca</th><th>Modelo</th><th>Detalle</th><th>Descripcion</th><th>venta</th><th>Costo</th><th>Fecha</th></tr>";
+    echo "<table class='table table-bordered' style='border: 1px solid black;'>";
+
+
+    echo "<tr>";
+    echo "<th class='text-center'>Cod</th>";
+    echo "<th class='text-center'>Rubro</th>";
+    echo "<th class='text-center'>Eq1</th>";
+    echo "<th class='text-center'>Eq2</th>";
+    echo "<th class='text-center'>Marca</th>";
+    echo "<th class='text-center'>Modelo</th>";
+    echo "<th class='text-center'>Detalle</th>";
+    echo "<th class='text-center'>Descripcion</th>";
+    echo "<th class='text-center'>venta</th>";
+    echo "<th class='text-center'>Costo</th>";
+    echo "<th class='text-center'>Fecha</th>";
+    echo "</tr>";
+
+
+
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
         echo "<td>" . $row['cod'] . "</td>";
