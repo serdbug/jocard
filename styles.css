@@ -1,10 +1,20 @@
+
+
+
 /* Estilo para el modo oscuro */
 .dark-mode {
     background-color: #3d3d41; /* Fondo oscuro */
-    color: #000000; /* Texto claro */
+    color: white; /* Texto claro */
 }
 
 /* Estilos para reducir el tamaño de los campos de entrada */
 .small-input {
     width: 250px; /* Ajusta el ancho según tus preferencias */
 }
+
+/* Estilos para la etiqueta con el atributo "for" igual a "cod" */
+label{
+    color: black;      /* Color del texto en blanco */
+    font-size: 25px;   /* Tamaño del texto más grande (ajusta según tus preferencias) */
+    font-weight: bold; /* Texto más grueso */
+  }

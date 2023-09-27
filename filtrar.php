@@ -77,17 +77,17 @@ if ($result->num_rows > 0) {
 
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
-        echo "<td>" . $row['cod'] . "</td>";
-        echo "<td>" . $row['rubro'] . "</td>";
-        echo "<td>" . $row['eq1'] . "</td>";
-        echo "<td>" . $row['eq2'] . "</td>";
-        echo "<td>" . $row['marca'] . "</td>";
-        echo "<td>" . $row['modelo'] . "</td>";
-        echo "<td>" . $row['detalle'] . "</td>";
-        echo "<td>" . $row['descripcion'] . "</td>";
-        echo "<td>" . $row['venta'] . "</td>";
-        echo "<td>" . $row['costo'] . "</td>";
-        echo "<td>" . $row['fecha'] . "</td>";
+        echo "<td style='text-align: center; vertical-align: middle; font-size: 12px; font-weight: bold;'>" . $row['cod'] . "</td>";
+        echo "<td style='text-align: center; vertical-align: middle; font-size: 12px; font-weight: bold;'>" . $row['rubro'] . "</td>";
+        echo "<td style='text-align: center; vertical-align: middle; font-size: 12px; font-weight: bold;'>" . $row['eq1'] . "</td>";
+        echo "<td style='text-align: center; vertical-align: middle; font-size: 12px; font-weight: bold;'>" . $row['eq2'] . "</td>";
+        echo "<td style='text-align: center; vertical-align: middle; font-size: 12px; font-weight: bold;'>" . $row['marca'] . "</td>";
+        echo "<td style='text-align: center; vertical-align: middle; font-size: 12px; font-weight: bold;'>" . $row['modelo'] . "</td>";
+        echo "<td style='text-align: center; vertical-align: middle; font-size: 12px; font-weight: bold;'>" . $row['detalle'] . "</td>";
+        echo "<td style='text-align: center; vertical-align: middle; font-size: 12px; font-weight: bold;'>" . $row['descripcion'] . "</td>";
+        echo "<td style='text-align: center; vertical-align: middle; font-size: 12px; font-weight: bold;'>" . $row['venta'] . "</td>";
+        echo "<td style='text-align: center; vertical-align: middle; font-size: 12px; font-weight: bold;'>" . $row['costo'] . "</td>";
+        echo "<td style='text-align: center; vertical-align: middle; font-size: 12px; font-weight: bold;'>" . $row['fecha'] . "</td>";
         echo "</tr>";
     }
     echo "</table>";
