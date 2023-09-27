@@ -18,3 +18,8 @@ label{
     font-size: 25px;   /* Tamaño del texto más grande (ajusta según tus preferencias) */
     font-weight: bold; /* Texto más grueso */
   }
+
+  #resultados {
+    max-width: 100%; /* Establece un ancho máximo para el div */
+    overflow-x: auto; /* Habilita la barra de desplazamiento horizontal si es necesario */
+}

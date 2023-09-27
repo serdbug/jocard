@@ -12,41 +12,78 @@
 
 </head>
 <body class="border border-5 border-black container-fluid">
+    
+    
+    
+    
     <h1 class="text-center">Distribuidora Jo-Car      -     Porcentaje de Ganancia 35% </h1>
     <h1 class="text-center">Lista de Precios</h1>
     <form method="POST" action="filtrar.php" id="filtrar-form">
         
-        <div class="form-group mx-auto text-center"> <!-- Utiliza la clase "form-group" para cada grupo de etiqueta e input -->
-            <label for="cod">Codigo:</label>
-            <input type="text" name="cod" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black"> <!-- Utiliza la clase "form-control" para el input -->
+        <div class="row">  
+            <div class="col">
+                <div class="d-flex justify-content-center mx-5">
+                    <div class="form-group mx-auto text-center"> 
+                        <div>
+                            <label for="cod">Codigo:</label>
+                            <input type="text" name="cod" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black"> <!-- Utiliza la clase "form-control" para el input -->
+                        </div>
+                    </div>
+
+                    <div class="form-group mx-auto text-center">
+                        <div>
+                            <label for="rubro">Rubro:</label>
+                            <input type="text" name="rubro" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
-    
-        <div class="form-group mx-auto text-center">
-            <label for="rubro">Rubro:</label>
-            <input type="text" name="rubro" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
+
+       <div class="row">
+        <div class="col">
+            <div class="d-flex justify-content-center mx-5">
+                <div class="form-group mx-auto text-center">
+                    <div>
+                        <label for="eq1">EQ1:</label>
+                        <input type="text" name="eq1" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
+                    </div>
+                </div>
+            
+                <div class="form-group mx-auto text-center">
+                    <div>
+                        <label for="eq2">EQ2:</label>
+                        <input type="text" name="eq2" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-    
-        <div class="form-group mx-auto text-center">
-            <label for="eq1">EQ1:</label>
-            <input type="text" name="eq1" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
+       </div>
+
+       <div class="row">
+        <div class="col">
+            <div class="d-flex justify-content-center mx-5">
+                <div class="form-group mx-auto text-center">
+                    <div>
+                        <label for="marca">Marca:</label>
+                        <input type="text" name="marca" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
+                    </div>
+                    
+                </div>
+            
+                <div class="form-group mx-auto text-center">
+                    <div>
+                        <label for="modelo">Modelo:</label>
+                        <input type="text" name="modelo" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
+                    </div>
+                </div>
+            </div>
         </div>
+       </div>
     
-        <div class="form-group mx-auto text-center">
-            <label for="eq2">EQ2:</label>
-            <input type="text" name="eq2" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
-        </div>
-    
-        <div class="form-group mx-auto text-center">
-            <label for="marca">Marca:</label>
-            <input type="text" name="marca" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
-        </div>
-    
-        <div class="form-group mx-auto text-center">
-            <label for="modelo">Modelo:</label>
-            <input type="text" name="modelo" class="form-control form-control-sm small-input mx-auto text-center border-1 border-black">
-        </div>
-    
-        
+
         <div class="text-center mt-3"> 
             <input type="submit" value="Buscar" class="btn btn-dark">
         </div>
