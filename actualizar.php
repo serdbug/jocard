@@ -32,22 +32,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <script>
-        // Función para buscar el registro utilizando AJAX
-        function buscarRegistro() {
-            var codigo = $("#codigo").val(); // Obtener el código de entrada
-
-            // Realizar la solicitud AJAX
-            $.ajax({
-                type: "POST",
-                url: "buscar.php", // Ruta al archivo PHP que procesa la búsqueda
-                data: { codigo: codigo }, // Enviar el código al servidor
-                success: function (response) {
-                    // Mostrar los resultados en el elemento con ID "resultados"
-                    $("#resultados").html(response);
-                }
-            });
-        }
-    </script>
+    <script src="buscarRegistro.js"></script>
 </body>
 </html>
