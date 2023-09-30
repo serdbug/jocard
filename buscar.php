@@ -47,34 +47,34 @@ if (isset($_POST['codigo'])) {
                     <input type="text" class="form-control border-dark border-1" id="codigo" name="codigo" value="<?php echo $row['cod']; ?>" disabled><br>
         
                     <label for="rubro">Rubro:</label>
-                    <input type="text" class="form-control border-dark border-1" id="rubro" name="rubro" value="<?php echo $row['rubro']; ?>" required><br>
+                    <input type="text" class="form-control border-dark border-1" id="rubro" name="rubro" value="<?php echo $row['rubro']; ?>" ><br>
 
                     <label for="eq1">EQ1:</label>
-                    <input type="text" class="form-control border-dark border-1" id="eq1" name="eq1" value="<?php echo $row['eq1']; ?>" required><br>
+                    <input type="text" class="form-control border-dark border-1" id="eq1" name="eq1" value="<?php echo $row['eq1']; ?>" ><br>
 
                     <label for="eq2">EQ12</label>
-                    <input type="text" class="form-control border-dark border-1" id="eq2" name="eq2" value="<?php echo $row['eq2']; ?>" required><br>
+                    <input type="text" class="form-control border-dark border-1" id="eq2" name="eq2" value="<?php echo $row['eq2']; ?>" ><br>
 
                     <label for="marca">Marca:</label>
-                    <input type="text" class="form-control border-dark border-1" id="marca" name="marca" value="<?php echo $row['marca']; ?>" required><br>
+                    <input type="text" class="form-control border-dark border-1" id="marca" name="marca" value="<?php echo $row['marca']; ?>" ><br>
 
                     <label for="modelo">Modelo:</label>
-                    <input type="text" class="form-control border-dark border-1" id="modelo" name="modelo" value="<?php echo $row['modelo']; ?>" required><br>
+                    <input type="text" class="form-control border-dark border-1" id="modelo" name="modelo" value="<?php echo $row['modelo']; ?>" ><br>
 
                     <label for="detalle">Detalle:</label>
-                    <input type="text" class="form-control border-dark border-1" id="detalle" name="detalle" value="<?php echo $row['detalle']; ?>" required><br>
+                    <input type="text" class="form-control border-dark border-1" id="detalle" name="detalle" value="<?php echo $row['detalle']; ?>" ><br>
 
                     <label for="descripcion">Descripcion:</label>
-                    <input type="text" class="form-control border-dark border-1" id="descripcion" name="descripcion" value="<?php echo $row['descripcion']; ?>" required><br>
+                    <input type="text" class="form-control border-dark border-1" id="descripcion" name="descripcion" value="<?php echo $row['descripcion']; ?>" ><br>
 
                     <label for="venta">Venta:</label>
-                    <input type="text" class="form-control border-dark border-1" id="venta" name="venta" value="<?php echo $row['venta']; ?>" required><br>
+                    <input type="text" class="form-control border-dark border-1" id="venta" name="venta" value="<?php echo $row['venta']; ?>" ><br>
 
                     <label for="costo">Costo:</label>
-                    <input type="text" class="form-control border-dark border-1" id="costo" name="costo" value="<?php echo $row['costo']; ?>" required><br>
+                    <input type="text" class="form-control border-dark border-1" id="costo" name="costo" value="<?php echo $row['costo']; ?>" ><br>
 
                     <label for="fecha">Fecha:</label>
-                    <input type="text" class="form-control border-dark border-1" id="fecha" name="fecha" value="<?php echo $row['fecha']; ?>" required><br>
+                    <input type="text" class="form-control border-dark border-1" id="fecha" name="fecha" value="<?php echo $row['fecha']; ?>" ><br>
         
                     
 
