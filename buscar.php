@@ -39,7 +39,7 @@ if (isset($_POST['codigo'])) {
                     <h1>Modificar Stock</h1>
                 </div>
         
-                <form action="guardar_modificacion.php" method="POST">
+                <form id="formulario-modificacion" action="guardarModificacion.php" method="POST">
                     <!-- Campos de entrada para editar los datos -->
                     <input type="hidden" name="codigo_original" value="<?php echo $row['cod']; ?>">
                     
@@ -79,11 +79,24 @@ if (isset($_POST['codigo'])) {
                     
 
                     <div style="padding-left: 100px; padding-right: 100px; text-align: center;">
-                        <input type="submit" value="Guardar Cambios" class="btn btn-success">
+                        <input type="submit" value="Guardar Cambios" class="btn btn-success" onclick="guardarCambios();">
                     </div>
                 </form>
             </div>
-            
+            <script>
+                function guardarCambios() {
+                $.ajax({
+                type: "POST",
+                url: "guardarModificacion.php", // Ruta al archivo PHP que procesa la actualización
+                data: $("#formulario-modificacion").serialize(), // Serialize el formulario para enviar los datos
+                success: function (response) {
+                alert(response); // Muestra un mensaje de éxito o error
+                // Actualiza la tabla con los datos actualizados
+                buscarRegistro();
+                }
+                });
+                }
+            </script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         </body>
         </html>
